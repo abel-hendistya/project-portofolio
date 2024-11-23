@@ -1,0 +1,70 @@
+.projects-section {
+  background-color: #1b1b1b;
+  padding: 3rem 1rem;
+  color: white;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0A3981;
+}
+
+.project-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Pemusatan gambar */
+.project-image-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.project-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0A3981;
+}
+
+.project-description {
+  font-size: 14px;
+}
+
+.card-footer button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-footer button:hover {
+  transform: scale(1.1);
+}
+
+.btn-primary {
+  background-color: #0A3981;
+  border-color: #0A3981;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}

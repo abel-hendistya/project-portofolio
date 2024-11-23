@@ -1,0 +1,196 @@
+/* Umum untuk tata letak container */
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px; /* Tambahkan ruang di dalam container */
+  background-color: #1b1b1b;
+}
+
+.testimonials-section {
+  background-color: #1b1b1b;
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem; /* Tambahkan jarak ke bawah */
+  color: #0A3981;
+}
+
+
+.row {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start; /* Memastikan elemen berada dalam satu baris */
+}
+
+/* Tombol Add */
+.add-btn {
+  display: block;
+  margin-bottom: 20px; /* Memberikan jarak antara tombol Add dan form/output */
+  padding: 10px 20px; /* Padding nyaman */
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.submit-btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 10%; 
+  background-color: #28a745; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.submit-btn:hover {
+  background-color: #218838; 
+  transform: scale(1.05); 
+}
+
+.learn-more-btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 10%; 
+  background-color: #17a2b8; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #138496; 
+  transform: scale(1.05); 
+}
+
+.edit-btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 10%; 
+  background-color: #ffc107; 
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800; 
+  transform: scale(1.05); 
+}
+
+.delete-btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 10%; 
+  background-color: #dc3545;  
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;  
+}
+
+.delete-btn:hover {
+  background-color: #c82333;  
+  transform: scale(1.05);   
+}
+
+
+/* Formulir */
+.testimonial-form-container {
+  background: #202020;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input dan Label */
+.testimonial-form .form-group {
+  margin-bottom: 15px; /* Tambahkan jarak antar form input */
+}
+
+.testimonial-form input,
+.testimonial-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.testimonial-form label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+/* Kartu Testimoni */
+.testimonial-card {
+  padding: 20px;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial-stars {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ccc; /* Warna default putih keabu-abuan */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star.filled {
+  color: #ffd700; /* Warna kuning/emas saat terisi */
+}
+
+
+
+.testimonial-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Untuk bagian testimonial */
+.testimonial-output-container {
+  flex-grow: 1; /* Memberikan ruang lebih banyak untuk output testimonial */
+  margin-top: 20px; /* Memberikan jarak antara form dan output */
+}
+
+/* Mengatur responsivitas */
+@media screen and (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column; /* Menyusun elemen secara vertikal pada layar kecil */
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px; /* Mengurangi jarak pada perangkat mobile */
+  }
+
+  .testimonial-output-container {
+    margin-top: 20px;
+  }
+}
