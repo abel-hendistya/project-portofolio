@@ -17,7 +17,7 @@ function Profile() {
         <img src={fbImage} alt="Your Profile" className="profile-image" />
       </div>
       <div className="profile-right">
-        <h2>Web Developer & UI/UX Desain</h2>
+        <h2>Web Developer & UI/UX Desainer</h2>
         <h1>Abel Hendistya</h1>
         <p>
           If you're used to facing storms, why should you shiver because of a small storm
